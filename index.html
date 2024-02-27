@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind and daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="Style/style.css">
+    <title>Phone Hunter</title>
+</head>
+
+<body class="max-width">
+    <header class="bg-[#0d6efd0d] hidden">
+        <div class="header-container sec-width">
+            <nav>
+                <div class="navbar ">
+                    <div class="navbar-start">
+
+                        <a class="btn btn-ghost text-2xl font-bold">Hot Gadgets</a>
+                    </div>
+
+                    <div class="navbar-end">
+                        <button class="btn btn-active btn-primary">Sign Up</button>
+                    </div>
+                </div>
+
+            </nav>
+            <div class="banner my-6">
+                <div class="hero min-h-screen ">
+                    <div class="hero-content flex-col-reverse ">
+                        <img src="image/bannar.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div class="text-center">
+                            <h1 class="text-5xl font-bold">Apple Iphone 13 Pro Max</h1>
+                            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </header>
+    <main class=" my-20">
+        <div class="carr-main-container ">
+
+
+            <div class="section-heading">
+                <h1 class="font-semibold text-2xl text-center">Search your phone</h1>
+
+            </div>
+            <!-- search container  -->
+            <div class="search-container input input-bordered pr-0 w-4/12 m-auto flex justify-between items-center ">
+                <div class=" flex">
+                    <img class="w-5 h-5 my-auto" src="image/icons8-search-50 (1).png" alt="">
+                    <input id="input-fild" type="text" placeholder="Search Phone..."
+                        class="input border-none input-bordered  max-w-xs" />
+                </div>
+                <button id="search-btn" class="btn btn-primary" onclick="searchAction()">Search</button>
+            </div>
+
+
+
+         <div id="modal-container">
+         
+         </div>   
+
+            <!-- card container  -->
+            <div id="card-container" class=" m-4 grid gap-6 grid-cols-3">
+
+
+            </div>
+
+           
+            <!-- loading -->
+            <div id="loading" class="flex justify-center items-center py-20 hidden">
+                <span class="loading loading-spinner loading-lg"></span>
+                <h1 class="text-center">Loading....</h1>
+            </div>
+             <!-- see all  -->
+             <div id="see-all" class="see-more-button-container text-center my-6 hidden">
+                <button id="see-all-btn" class="btn btn-primary" onclick="seeAllAction()">See All</button>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
